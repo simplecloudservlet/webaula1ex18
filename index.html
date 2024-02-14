@@ -1,9 +1,5 @@
-<!-- TODO1: Adicione um formulario para o botao 'Boleto' para redirecionar
-            a pagina para a 'pagina2.html' ao clicar sobre o botao.
--->
-<!-- TODO2: Adicione uma ação ao botao 'Cartao' sem formulário para redirecionar 
-            a pagina para a 'pagina2.html' ao clicar sobre o botao.
--->
+<!-- TODO1: Adicione um botão que imprima uma mensagem com o seu nome -->
+<!-- TODO2 -->
 <!DOCTYPE html>
 <html lang="bzs">
 
@@ -12,82 +8,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Comércio Eletrônico</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/estilos.css"/> -->
-	<!-- Folha de estilos do Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<!-- Forma1: Antes de carregar o HTML -->
+	<!-- No HTML5 nao eh necessario definir o atributo 'type' -->
+	<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+
 </head>
 
 <body>
+	<!-- Forma1: Antes de carregar o HTML-->
+	<!-- <button onclick="ola()">Olá Mundo!</button> -->
 
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h1 class="text-left text-sucess bg-info">Comércio
-					Eletrônico</h1>
-			</div>
-		</div>
+	<!-- Outra forma de utilizar JavaScript -->
+	<!-- Define o ID do botao. Este ID sera usado pelo script para
+		  disparar o evento para este componente.
+	-->
+	<button id="botaoOla">Olá Mundo!</button>
 
-		<!-- Tabela Bootstrap -->
-		<table class="table table-hover">
-			<tr>
-				<th>ID</th>
-				<th>Produto</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>Lápis</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Borracha</td>
-			</tr>
-		</table>
-
-		<form class="card p-2" action="pagina2.html" method="get">
-			<div class="input-group">
-				<input type="text" class="form-control" name="codigo" placeholder="Promo code">
-				<button type="submit" class="btn btn-secondary">Pagina2</button>
-			</div>
-		</form>
-
-		<div>
-
-			<!-- Formulario com Button e redirecionamento -->
-			<form class="card p-2" action="pagina2.html" method="get">
-				<div class="input-group">
-					<input type="text" class="form-control" name="pix" placeholder="Valor do PIX">
-					<button type="submit" class="btn btn-primary">PIX</button>
-				</div>
-			</form>
-
-			<!-- TODO1 -->
-			<form class="card p-2" action="pagina2.html" method="get">
-				<div class="input-group">
-					<input type="text" class="form-control" name="cartao" placeholder="Valor do Cartão">
-					<button type="submit" class="btn btn-primary">Cartão</button>
-				</div>
-			</form>
-
-			<!-- TODO2-->
-			<div class="d-flex">
-				<a href="pagina2.html" class="btn btn-secondary">Boleto</a>
-			</div>
-			
-			
-			<button type="button" class="btn btn-danger">À Vista</button>
-			<button type="button" class="btn btn-warning">Crediário</button>
-			<button type="button" class="btn btn-info">Bolsa Família</button>
-			<button type="button" class="btn btn-light">Prestação</button>
-			<button type="button" class="btn btn-dark">Empréstimo</button>
-			<button type="button" class="btn btn-link">Outros</button>
-		</div>
-
-
-		<!-- Esse trecho deve aparecer antes do </body> -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"></script>
+	<!-- Necessariamente a carga do script deve vir depois,
+	      porque o script precisa do ID do botao
+	-->
+	<!-- No HTML5 nao eh necessario definir o atributo 'type' -->
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

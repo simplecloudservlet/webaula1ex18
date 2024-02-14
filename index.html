@@ -1,5 +1,6 @@
-<!-- TODO1: Adicione um botão que imprima uma mensagem com o seu nome -->
-<!-- TODO2 -->
+<!-- TODO1: Adicione um botão que subtraia dois numeros e exiba o resultado -->
+<!-- TODO2: Adicione um botão que multiplique dois numeros e exiba o resultado -->
+<!-- TODO3: Adicione um botão que divida dois numeros e exiba o resultado -->
 <!DOCTYPE html>
 <html lang="bzs">
 
@@ -9,27 +10,21 @@
 
 	<title>Comércio Eletrônico</title>
 	
-	<!-- Forma1: Antes de carregar o HTML -->
-	<!-- No HTML5 nao eh necessario definir o atributo 'type' -->
-	<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 </head>
 
 <body>
 	<!-- Forma1: Antes de carregar o HTML-->
-	<!-- <button onclick="ola()">Olá Mundo!</button> -->
+	<button onclick="nova()">Olá Mundo!</button>
 
-	<!-- Outra forma de utilizar JavaScript -->
-	<!-- Define o ID do botao. Este ID sera usado pelo script para
-		  disparar o evento para este componente.
-	-->
-	<button id="botaoOla">Olá Mundo!</button>
+	<form action="pagina2.html" method="get">
+		<input type="text" id="valor1" placeholder="Número 1">
+		<input type="text" id="valor2" placeholder="Número 2">
+		<input type="submit" onclick=somar() value="Somar">
+	</form>
+	
 
-	<!-- Necessariamente a carga do script deve vir depois,
-	      porque o script precisa do ID do botao
-	-->
-	<!-- No HTML5 nao eh necessario definir o atributo 'type' -->
-	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
